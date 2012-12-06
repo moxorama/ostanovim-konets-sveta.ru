@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Акция по противодействию концу света</title>
+  <%= stylesheet_link_tag    'application'%>
+  <%= javascript_include_tag 'application'%>
+</head>
+<body id="stop-end-of-the-world">
+<div class="container">
+  <div class="hero-unit">
+    <h1>Остановим конец света!*</h1>
+    <br><br>
+        <%= link_to(
+          {:controller => 'stopper', :action => 'stop_end_of_the_world'},
+          { :class => 'btn btn-large btn-primary', :remote => true}
+        ) do %>
+          Кнопка отмены конца света <i  class="icon-world"></i>
+        <% end %>
+    <br><br>
+    <h2>Уже <span id="counter"><%= Stopper.attempts %></span></h2>
+
+ </div>
+  <div class="row">
+    <div class="span4">
+      <h3>Ссылки по теме</h3>
+      <ul>
+        <li><a href="http://lurkmore.to/%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%BE%D0%B9_%D0%9F%D0%B8%D0%B7%D0%B4%D0%B5%D1%86">http://lurkmore.to/Большой_пиздец.</a></li>
+        <li><a href="https://www.youtube.com/watch?v=HWUDSufNso0">Ирвин Ялом. Всмативаясь в солнце.</a></li>
+      </ul>
+    </div>
+    <div class="span4">
+      <h3>Поддержка акции</h3>
+      <ul>
+        <li>
+          <a target="_blank"  href="http://vkontakte.ru/share.php?url=">
+             Поделиться в ВКонтакте
+           </a>
+        </li>
+        <li>
+          <a target="_blank"  href="http://www.facebook.com/sharer.php?u=">
+            Написать в Facebook
+           </a>
+        </li>
+        <li>
+          <a target="_blank"  href="http://twitter.com/share?url=">
+            Опубликовать в Twitter    
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="span12">
+      <p><small>*Акция действительна до 21.12.2012</small></p>
+      <p><small> &copy; 2012 <a href="https://github.com/moxorama">Moxorama</a></small></p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
