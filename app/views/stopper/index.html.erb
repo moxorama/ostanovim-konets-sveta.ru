@@ -6,6 +6,33 @@
   <%= javascript_include_tag 'application'%>
 </head>
 <body id="stop-end-of-the-world">
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter18715423 = new Ya.Metrika({id:18715423,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/18715423" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
 <div class="container">
   <div class="hero-unit">
     <h1>Остановим конец света!*</h1>
@@ -18,13 +45,21 @@
         <% end %>
     <br><br>
     <h2>Уже <span id="counter"><%= Stopper.attempts %></span></h2>
-
+    <br><br>
  </div>
+  <div class="row">
+    <div class="span12">
+      <blockquote>
+        <p>Я считаю что надо долбить по кнопке пока конец света не отменится.</p>
+        <small>Анонимус, <cite>Руководство пользователя.</cite></small>
+      </blockquote>
+    </div>
+  </div>
   <div class="row">
     <div class="span4">
       <h3>Ссылки по теме</h3>
       <ul>
-        <li><a href="http://lurkmore.to/%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%BE%D0%B9_%D0%9F%D0%B8%D0%B7%D0%B4%D0%B5%D1%86">http://lurkmore.to/Большой_пиздец.</a></li>
+        <li><a href="http://lurkmore.to/2012">http://lurkmore.to/2012.</a></li>
         <li><a href="https://www.youtube.com/watch?v=HWUDSufNso0">Ирвин Ялом. Всмативаясь в солнце.</a></li>
       </ul>
     </div>
