@@ -1,6 +1,7 @@
 # -*- encoding : utf-8 -*-
 class StopperController < ApplicationController
   layout false
+
   def index
   end
 
@@ -8,6 +9,4 @@ class StopperController < ApplicationController
     @saver = Stopper.first
     @saver.update_attributes(:value => @saver.value + 1)
   end
-
-
 end
