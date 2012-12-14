@@ -7,6 +7,6 @@ class StopperController < ApplicationController
 
   def stop_end_of_the_world
     @saver = Stopper.first
-    @saver.update_attributes(:value => @saver.value + 1)
+    @saver.increment!(:value)
   end
 end
